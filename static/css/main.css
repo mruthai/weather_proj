@@ -69,3 +69,7 @@ h4 {
 h2 {
     margin-left: 1rem;
 }
+
+img {
+    filter:brightness(0) invert(1);
+}

@@ -34,7 +34,7 @@ async function weatherCityApi(city){
     weatherContainer.innerHTML = `
         <div class="molecules">   
             <h2>${data.name}</h2>
-            <h4>${data.weather[0].main} </h4> 
+            <h4>${data.weather[0].main} <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"></h4> 
             <h4> Current ~ ${Math.round(temp)} ℉ </h4>
             <h4>${Math.round(tempMin)} ℉ | ${Math.round(tempMax)} ℉ </h4>
             <h4> Humidity: ${data.main.humidity} %</h4>
